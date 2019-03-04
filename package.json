@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "This is an app that helps the user find friends based off the other people using the app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasonDobbs/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MasonDobbs/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/MasonDobbs/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "Scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey</title>
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- friends file -->
+    <link rel="javascript" href="../data/friends.js">
+    <!-- style file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="cardThing">
+        <h1>Survey</h1>
+        <h5>Please answer the questions as best as you can.</h5>
+
+        <div class="input-group mb-3">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+            </div>
+            <input id="userName" type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Photo</span>
+            </div>
+            <input id="userPhoto" type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <h3 class="question">Question 1</h3>
+        <h5>You enjoy going to parties, concerts, or parades.</h5>
+
+
+        <select id="question1">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+
+        <h3 class="question">Question 2</h3>
+        <h5>You find yourself doing things becuase you're curious about them.</h5>
+        <select id="question2">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3 class="question">Question 3</h3>
+        <h5>You enjoy laying around and watching TV or movies.</h5>
+        <select id="question3">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+
+        <h3 class="question">Question 4</h3>
+        <h5>You enjoy constantly learning new things.</h5>
+        <select id="question4">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+
+        <h3 class="question">Question 5</h3>
+        <h5>You rarely get angry at people.</h5>
+        <div class="dropdown">
+            <select id="question5">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+
+            <h3 class="question">Question 6</h3>
+            <h5>You think everyone else is dumber than you.</h5>
+            <select id="question6">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3 class="question">Question 7</h3>
+            <h5>You're always fantasising.</h5>
+            <select id="question7">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3 class="question">Question 8</h3>
+            <h5>You have lots of energy.</h5>
+            <select id="question8">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3 class="question">Question 9</h3>
+            <h5>It is hard to relate to other peoples feelings.</h5>
+            <select id="question9">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3 class="question">Question 10</h3>
+            <h5>It's easier to focus when there is pressure.</h5>
+            <select id="question10">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <button id="submitSurvey" type="button" class="btn btn-secondary">Submit</button>
+        </div>
+    </div>
+
+    <style>
+    
+    #cardThing{
+        margin: 3%;
+    }
+
+    .question{
+        margin: 1%;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+
+        $("#submitSurvey").on("click", function (event) {
+            event.preventDefault();
+
+            var userInput = {
+                name: $("#userName").val().trim(),
+                photo: $("#userPhoto").val().trim(),
+                score: [$("#question1").val().trim(),
+                $("#question2").val().trim(),
+                $("#question3").val().trim(),
+                $("#question4").val().trim(),
+                $("#question5").val().trim(),
+                $("#question6").val().trim(),
+                $("#question7").val().trim(),
+                $("#question8").val().trim(),
+                $("#question9").val().trim(),
+                $("#question10").val().trim()]
+            };
+
+            console.log(userInput);
+
+            friendsArray.push(userInput);
+
+                $("#userName").empty();
+                $("#userPhoto").empty();
+                $("#question1").empty();
+                $("#question2").empty();
+                $("#question3").empty();
+                $("#question4").empty();
+                $("#question5").empty();
+                $("#question6").empty();
+                $("#question7").empty();
+                $("#question8").empty();
+                $("#question9").empty();
+                $("#question10").empty();
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
